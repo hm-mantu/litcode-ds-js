@@ -1,0 +1,17 @@
+import { LinkedList } from './linkedList/index.js'
+
+const ll = new LinkedList(2)
+ll.push(5)
+ll.push(7)
+ll.pop()
+ll.push(9)
+ll.unshift(10)
+ll.shift()
+ll.set(1, 21)
+ll.insert(0, 23)
+ll.insert(2, 24)
+console.log(JSON.stringify(ll), ll.length)
+ll.remove(2)
+ll.remove(0)
+ll.reverse()
+console.log(JSON.stringify(ll), ll.length)
